@@ -1,7 +1,12 @@
 import axios from 'axios';
 
-// Use environment variable with HTTPS Render backend URL fallback
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://careerpilotinterviewassistant.onrender.com/api';
+// Dynamically select API base URL: Full Render HTTPS backend in production mode, relative /api in development mode
+const isProduction = import.meta.env.MODE === 'production';
+const RENDER_BACKEND_URL = 'https://careerpilotinterviewassistant.onrender.com/api';
+
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL && import.meta.env.VITE_API_BASE_URL !== '/api')
+  ? import.meta.env.VITE_API_BASE_URL
+  : (isProduction ? RENDER_BACKEND_URL : '/api');
 
 const api = axios.create({
   baseURL: API_BASE_URL,
