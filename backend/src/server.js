@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const path = require('path');
+const fs = require('fs');
 
 dotenv.config();
 
@@ -35,14 +37,6 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Root Route
-app.get('/', (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "Career Pilot API is running smoothly!"
-  });
-});
-
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/profile', profileRoutes);
@@ -50,13 +44,26 @@ app.use('/api/interviews', interviewRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/mentor', mentorRoutes);
 
-// 404 Route Handler
-app.use((req, res, next) => {
-  res.status(404).json({
-    success: false,
-    error: `API route not found: ${req.method} ${req.originalUrl}`
+// Serve Production Frontend Static Files
+const frontendDistPath = path.join(__dirname, '../../frontend/dist');
+if (fs.existsSync(frontendDistPath)) {
+  app.use(express.static(frontendDistPath));
+
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(frontendDistPath, 'index.html'));
   });
-});
+} else {
+  // Root Route Fallback
+  app.get('/', (req, res) => {
+    res.status(200).json({
+      success: true,
+      message: "Career Pilot API is running smoothly!"
+    });
+  });
+}
 
 // Centralized Error Handling Middleware
 app.use(errorHandler);
