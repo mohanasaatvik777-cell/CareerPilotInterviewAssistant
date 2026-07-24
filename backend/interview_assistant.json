@@ -41,6 +41,20 @@
       "target_jd": "",
       "created_at": "2026-07-24T04:36:11.595Z",
       "updated_at": "2026-07-24T04:36:11.595Z"
+    },
+    {
+      "id": 4,
+      "name": "saatvik",
+      "email": "saatviktadikamalla@gmail.com",
+      "password_hash": "$2a$10$LsDsCexEE..rzEeEWE2CWeN1zViebk8Ia1Po0p4JsD4ZYP7Tw36Ci",
+      "target_role": "Full Stack Developer",
+      "experience_level": "Mid-Level (3-5 years)",
+      "industry": "Software & Technology",
+      "bio": "",
+      "skills_json": "[]",
+      "target_jd": "",
+      "created_at": "2026-07-24T06:58:05.665Z",
+      "updated_at": "2026-07-24T06:58:05.665Z"
     }
   ],
   "interview_sessions": [
@@ -63,6 +77,26 @@
       "improvement_plan_json": "[]",
       "created_at": "2026-07-24T04:36:13.894Z",
       "updated_at": "2026-07-24T04:36:13.894Z"
+    },
+    {
+      "id": 21,
+      "user_id": 4,
+      "title": "Technical Practice — Full Stack Developer",
+      "target_role": "Full Stack Developer",
+      "experience_level": "Mid-Level (2-5 yrs)",
+      "industry": "Software & Technology",
+      "interview_type": "Technical",
+      "job_description": "",
+      "role_explanation": "{\"overview\":\"In a Technical interview for a Mid-Level (2-5 yrs) Full Stack Developer within Software & Technology, interviewers evaluate both your technical execution capability and strategic decision-making framework. As a candidate at the Mid-Level (2-5 yrs) tier, expectations focus on demonstrating ownership, measurable impact, and structured communication.\",\"keyCompetencies\":[\"Problem Solving & System Thinking\",\"Technical Mastery & Industry Best Practices\",\"Cross-functional Communication & Stakeholder Alignment\",\"Execution Speed, Operational Efficiency & Quality Control\"],\"commonQuestionThemes\":[\"Handling architectural or strategic trade-offs under constraints\",\"Overcoming project roadblocks or team disagreements\",\"Designing scalable, resilient solutions for complex scenarios\",\"Demonstrating business impact through measurable metrics\"],\"formatStrategy\":\"Use the STAR format (Situation, Task, Action, Result) for behavioral questions. For technical/case questions, start with high-level design, articulate assumptions clearly, evaluate trade-offs, and quantify outcomes using numbers and business impact.\"}",
+      "status": "in_progress",
+      "overall_score": 0,
+      "duration_seconds": 0,
+      "summary": "",
+      "strengths_json": "[]",
+      "weaknesses_json": "[]",
+      "improvement_plan_json": "[]",
+      "created_at": "2026-07-24T06:58:17.005Z",
+      "updated_at": "2026-07-24T06:58:17.005Z"
     }
   ],
   "questions": [
@@ -130,10 +164,98 @@
       "is_follow_up": 0,
       "parent_question_id": null,
       "created_at": "2026-07-24T04:36:13.908Z"
+    },
+    {
+      "id": 99,
+      "session_id": 21,
+      "question_number": 1,
+      "question_text": "As a Mid-Level (2-5 yrs) Full Stack Developer in Software & Technology, can you walk me through a major project where you led system design? What were the key architectural trade-offs, constraints, and business outcomes?",
+      "category": "Technical",
+      "difficulty": "Medium",
+      "expected_competencies_json": "[\"Core Domain Mastery\",\"Technical Trade-offs\",\"Business Impact\"]",
+      "star_guidance": "Detail the business context (Situation), your core responsibility (Task), the exact engineering/strategy steps (Action), and key metrics achieved (Result).",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T06:58:17.015Z"
+    },
+    {
+      "id": 100,
+      "session_id": 21,
+      "question_number": 2,
+      "question_text": "Describe a situation in your work as a Full Stack Developer where you encountered an unexpected system failure or shifting business requirement while implementing execution. How did you reprioritize and keep stakeholders aligned?",
+      "category": "Behavioral",
+      "difficulty": "Medium",
+      "expected_competencies_json": "[\"Crisis Management\",\"Stakeholder Communication\",\"Adaptability\"]",
+      "star_guidance": "Focus on early risk escalation, transparent stakeholder updates, and maintaining output quality.",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T06:58:17.020Z"
+    },
+    {
+      "id": 101,
+      "session_id": 21,
+      "question_number": 3,
+      "question_text": "What production best practices, observability tools, or scaling patterns do you apply when building infrastructure for Full Stack Developer roles handling system design?",
+      "category": "Technical",
+      "difficulty": "Hard",
+      "expected_competencies_json": "[\"Scalability\",\"System Architecture\",\"Production Observability\"]",
+      "star_guidance": "Walk through your diagnostic methodology step-by-step before detailing implementation choices.",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T06:58:17.028Z"
+    },
+    {
+      "id": 102,
+      "session_id": 21,
+      "question_number": 4,
+      "question_text": "Tell me about a time you had a strong technical disagreement with a colleague regarding design choices for execution. How did you evaluate options and reach consensus?",
+      "category": "Managerial",
+      "difficulty": "Medium",
+      "expected_competencies_json": "[\"Conflict Resolution\",\"Data-Driven Decision Making\",\"Peer Alignment\"]",
+      "star_guidance": "Highlight active listening, prototyping/benchmarking, and focusing on business outcomes rather than winning an argument.",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T06:58:17.033Z"
+    },
+    {
+      "id": 103,
+      "session_id": 21,
+      "question_number": 5,
+      "question_text": "If selected for this Full Stack Developer position, what specific milestones would you establish for your first 30, 60, and 90 days to drive value in system design?",
+      "category": "HR",
+      "difficulty": "Easy",
+      "expected_competencies_json": "[\"Strategic Planning\",\"Leadership\",\"Execution Velocity\"]",
+      "star_guidance": "Break down your answer into 30 days (context & onboarding), 60 days (first major deliverable), and 90 days (process optimization & scaling).",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T06:58:17.042Z"
     }
   ],
-  "answers": [],
-  "feedback": [],
+  "answers": [
+    {
+      "id": 19,
+      "question_id": 99,
+      "user_id": 4,
+      "answer_text": "I don't know the answer",
+      "duration_seconds": 11,
+      "self_assessment_score": 3,
+      "created_at": "2026-07-24T06:58:28.579Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": 19,
+      "answer_id": 19,
+      "relevance_score": 0,
+      "clarity_score": 10,
+      "evidence_score": 0,
+      "star_score": 0,
+      "confidence_score": null,
+      "overall_score": null,
+      "feedback_summary": "[Situation]: In my role as a Full Stack Developer, our team encountered a scenario requiring deep domain knowledge in Technical. [Task]: My responsibility was to research industry standards, identify root causes, and propose a solution. [Action]: I reviewed technical documentation, constructed a prototype, and consulted senior peers. [Result]: This resolved our project bottleneck and established a reliable template for future work.",
+      "created_at": "2026-07-24T06:58:28.584Z"
+    }
+  ],
   "prep_cards": [
     {
       "id": 1,
@@ -400,11 +522,11 @@
     }
   ],
   "auto_ids": {
-    "users": 4,
-    "interview_sessions": 21,
-    "questions": 99,
-    "answers": 19,
-    "feedback": 19,
+    "users": 5,
+    "interview_sessions": 22,
+    "questions": 104,
+    "answers": 20,
+    "feedback": 20,
     "prep_cards": 29,
     "session_shares": 1,
     "practice_plans": 2

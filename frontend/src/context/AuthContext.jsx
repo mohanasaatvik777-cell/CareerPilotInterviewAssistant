@@ -29,25 +29,35 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = async (email, password) => {
-    const res = await authAPI.login({ email, password });
-    if (res.data.success) {
-      setToken(res.data.token);
-      localStorage.setItem('interview_token', res.data.token);
-      setUser(res.data.user);
-      return res.data;
+    try {
+      const res = await authAPI.login({ email, password });
+      if (res.data.success) {
+        setToken(res.data.token);
+        localStorage.setItem('interview_token', res.data.token);
+        setUser(res.data.user);
+        return res.data;
+      }
+      throw new Error(res.data.error || 'Login failed');
+    } catch (err) {
+      const msg = err.response?.data?.error || err.response?.data?.details?.[0]?.message || err.message || 'Login failed';
+      throw new Error(msg);
     }
-    throw new Error(res.data.error || 'Login failed');
   };
 
   const register = async (name, email, password, targetRole, experienceLevel, industry) => {
-    const res = await authAPI.register({ name, email, password, targetRole, experienceLevel, industry });
-    if (res.data.success) {
-      setToken(res.data.token);
-      localStorage.setItem('interview_token', res.data.token);
-      setUser(res.data.user);
-      return res.data;
+    try {
+      const res = await authAPI.register({ name, email, password, targetRole, experienceLevel, industry });
+      if (res.data.success) {
+        setToken(res.data.token);
+        localStorage.setItem('interview_token', res.data.token);
+        setUser(res.data.user);
+        return res.data;
+      }
+      throw new Error(res.data.error || 'Registration failed');
+    } catch (err) {
+      const msg = err.response?.data?.error || err.response?.data?.details?.[0]?.message || err.message || 'Registration failed';
+      throw new Error(msg);
     }
-    throw new Error(res.data.error || 'Registration failed');
   };
 
   const logout = () => {
@@ -57,12 +67,17 @@ export const AuthProvider = ({ children }) => {
   };
 
   const updateProfile = async (updatedData) => {
-    const res = await profileAPI.updateProfile(updatedData);
-    if (res.data.success) {
-      setUser(res.data.profile);
-      return res.data.profile;
+    try {
+      const res = await profileAPI.updateProfile(updatedData);
+      if (res.data.success) {
+        setUser(res.data.profile);
+        return res.data.profile;
+      }
+      throw new Error(res.data.error || 'Failed to update profile');
+    } catch (err) {
+      const msg = err.response?.data?.error || err.response?.data?.details?.[0]?.message || err.message || 'Failed to update profile';
+      throw new Error(msg);
     }
-    throw new Error(res.data.error || 'Failed to update profile');
   };
 
   return (

@@ -10,9 +10,10 @@ const validate = (schema) => (req, res, next) => {
         field: err.path.join('.'),
         message: err.message
       }));
+      const firstErrorMessage = formattedErrors[0]?.message || 'Validation failed';
       return res.status(400).json({
         success: false,
-        error: 'Validation failed',
+        error: firstErrorMessage,
         details: formattedErrors
       });
     }
