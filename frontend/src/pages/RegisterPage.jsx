@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Sparkles, User, Mail, Lock, Briefcase, Award, ArrowRight } from 'lucide-react';
+import { Sparkles, User, Mail, Lock, ArrowRight, Loader2 } from 'lucide-react';
 
 export default function RegisterPage() {
   const { register } = useAuth();
@@ -20,8 +20,16 @@ export default function RegisterPage() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
+    if (loading) return;
+
     setError('');
+    
+    if (!formData.name.trim() || !formData.email.trim() || !formData.password) {
+      setError('Please fill in all required fields.');
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -35,11 +43,7 @@ export default function RegisterPage() {
       );
       navigate('/dashboard');
     } catch (err) {
-      let msg = err.message || 'Registration failed. Please try again.';
-      if (err.code === 'ECONNABORTED' || err.message?.includes('Network Error')) {
-        msg = 'Server is waking up (Render free tier cold start). Please wait 10-15 seconds and click again!';
-      }
-      setError(msg);
+      setError(err.message || 'Registration failed. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -139,10 +143,18 @@ export default function RegisterPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transition-all mt-4"
+            className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transition-all mt-4 disabled:opacity-50"
           >
-            {loading ? 'Creating Account...' : 'Register Account'}
-            {!loading && <ArrowRight className="w-4 h-4" />}
+            {loading ? (
+              <span className="flex items-center gap-2">
+                <Loader2 className="w-4 h-4 animate-spin text-white" />
+                Creating Candidate Account...
+              </span>
+            ) : (
+              <>
+                Register Account <ArrowRight className="w-4 h-4" />
+              </>
+            )}
           </button>
         </form>
 

@@ -111,6 +111,20 @@
       "target_jd": "",
       "created_at": "2026-07-24T10:04:05.438Z",
       "updated_at": "2026-07-24T10:04:05.438Z"
+    },
+    {
+      "id": 9,
+      "name": "jhjg",
+      "email": "ghhv@gmail.com",
+      "password_hash": "$2a$10$rSVKivHZoZqHlS9N4um8euEGcm0ib7DL5.raKDPY53oV/bcKdZiYO",
+      "target_role": "Full Stack Developer",
+      "experience_level": "Mid-Level (3-5 years)",
+      "industry": "Software & Technology",
+      "bio": "",
+      "skills_json": "[]",
+      "target_jd": "",
+      "created_at": "2026-07-24T10:46:29.952Z",
+      "updated_at": "2026-07-24T10:46:29.952Z"
     }
   ],
   "interview_sessions": [
@@ -578,7 +592,7 @@
     }
   ],
   "auto_ids": {
-    "users": 9,
+    "users": 10,
     "interview_sessions": 22,
     "questions": 104,
     "answers": 20,

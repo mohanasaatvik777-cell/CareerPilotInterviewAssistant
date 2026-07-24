@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Sparkles, Mail, Lock, ArrowRight, Zap } from 'lucide-react';
+import { Sparkles, Mail, Lock, ArrowRight, Zap, Loader2 } from 'lucide-react';
 
 export default function LoginPage() {
   const { login } = useAuth();
@@ -13,19 +13,22 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
+    if (loading) return;
+
     setError('');
+    if (!email.trim() || !password) {
+      setError('Please enter both email and password.');
+      return;
+    }
+
     setLoading(true);
 
     try {
       await login(email.trim(), password);
       navigate('/dashboard');
     } catch (err) {
-      let msg = err.message || 'Login failed. Please check credentials.';
-      if (err.code === 'ECONNABORTED' || err.message?.includes('Network Error')) {
-        msg = 'Server is waking up (Render free tier cold start). Please wait 10-15 seconds and click again!';
-      }
-      setError(msg);
+      setError(err.message || 'Login failed. Please check credentials.');
     } finally {
       setLoading(false);
     }
@@ -88,10 +91,18 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transition-all"
+            className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transition-all disabled:opacity-50"
           >
-            {loading ? 'Authenticating...' : 'Sign In to Dashboard'}
-            {!loading && <ArrowRight className="w-4 h-4" />}
+            {loading ? (
+              <span className="flex items-center gap-2">
+                <Loader2 className="w-4 h-4 animate-spin text-white" />
+                Authenticating...
+              </span>
+            ) : (
+              <>
+                Sign In to Dashboard <ArrowRight className="w-4 h-4" />
+              </>
+            )}
           </button>
         </form>
 
