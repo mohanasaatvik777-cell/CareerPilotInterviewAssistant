@@ -1,0 +1,412 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alex Candidate",
+      "email": "alex@example.com",
+      "password_hash": "$2a$10$LhPr3C.gPT2SvcTICxOv8eS6zPksG3PtAtoXDjxXIwAsEYvrHanJa",
+      "target_role": "Senior Full Stack Engineer",
+      "experience_level": "Senior (5-8 years)",
+      "industry": "Software & Technology",
+      "bio": "Passionate web developer building high-scalability full-stack systems.",
+      "skills_json": "[\"React\",\"Node.js\",\"TypeScript\",\"SQL\",\"System Design\",\"Generative AI\"]",
+      "target_jd": "",
+      "created_at": "2026-07-23T15:35:52.481Z",
+      "updated_at": "2026-07-23T15:35:52.481Z"
+    },
+    {
+      "id": 2,
+      "name": "saatvik",
+      "email": "mohanasaatvik143@gmail.com",
+      "password_hash": "$2a$10$gCjBvCuz6bBV79skNIo9aOHIpNiFxg.h4xRn371i66W6Ek7tNZIFq",
+      "target_role": "Full Stack Developer",
+      "experience_level": "Mid-Level (3-5 yrs)",
+      "industry": "Software & Technology",
+      "bio": "",
+      "skills_json": "[]",
+      "target_jd": "",
+      "created_at": "2026-07-23T16:23:40.911Z",
+      "updated_at": "2026-07-23T16:23:40.911Z"
+    },
+    {
+      "id": 3,
+      "name": "Saatvik",
+      "email": "testuser@example.com",
+      "password_hash": "$2a$10$Ym3FbiHOoBTU7XwcYK4cXebPykdqZWkNivQg3gr7tufkkGKAeo0Tm",
+      "target_role": "Full Stack Developer",
+      "experience_level": "Mid-Level (3-5 years)",
+      "industry": "Software & Technology",
+      "bio": "",
+      "skills_json": "[]",
+      "target_jd": "",
+      "created_at": "2026-07-24T04:36:11.595Z",
+      "updated_at": "2026-07-24T04:36:11.595Z"
+    }
+  ],
+  "interview_sessions": [
+    {
+      "id": 12,
+      "user_id": 3,
+      "title": "Technical (React, Node.js) — Full Stack Developer",
+      "target_role": "Full Stack Developer",
+      "experience_level": "Mid-Level (2-5 yrs)",
+      "industry": "Software & Technology",
+      "interview_type": "Technical",
+      "job_description": "",
+      "role_explanation": "{\"overview\":\"In a Technical interview for a Mid-Level (2-5 yrs) Full Stack Developer within Software & Technology, interviewers evaluate both your technical execution capability and strategic decision-making framework. As a candidate at the Mid-Level (2-5 yrs) tier, expectations focus on demonstrating ownership, measurable impact, and structured communication.\",\"keyCompetencies\":[\"Problem Solving & System Thinking\",\"Technical Mastery & Industry Best Practices\",\"Cross-functional Communication & Stakeholder Alignment\",\"Execution Speed, Operational Efficiency & Quality Control\"],\"commonQuestionThemes\":[\"Handling architectural or strategic trade-offs under constraints\",\"Overcoming project roadblocks or team disagreements\",\"Designing scalable, resilient solutions for complex scenarios\",\"Demonstrating business impact through measurable metrics\"],\"formatStrategy\":\"Use the STAR format (Situation, Task, Action, Result) for behavioral questions. For technical/case questions, start with high-level design, articulate assumptions clearly, evaluate trade-offs, and quantify outcomes using numbers and business impact.\"}",
+      "status": "in_progress",
+      "overall_score": 0,
+      "duration_seconds": 0,
+      "summary": "",
+      "strengths_json": "[]",
+      "weaknesses_json": "[]",
+      "improvement_plan_json": "[]",
+      "created_at": "2026-07-24T04:36:13.894Z",
+      "updated_at": "2026-07-24T04:36:13.894Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": 56,
+      "session_id": 12,
+      "question_number": 1,
+      "question_text": "As a Mid-Level (2-5 yrs) Full Stack Developer in Software & Technology, can you walk me through a major project where you handled React? What were the key trade-offs and business results?",
+      "category": "Technical",
+      "difficulty": "Medium",
+      "expected_competencies_json": "[\"Core Domain Knowledge\",\"Technical Trade-offs\",\"Execution Impact\"]",
+      "star_guidance": "Outline the business context (Situation), your specific responsibility (Task), the technical options you evaluated and chose (Action), and quantifiable results (Result).",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T04:36:13.897Z"
+    },
+    {
+      "id": 57,
+      "session_id": 12,
+      "question_number": 2,
+      "question_text": "Describe a situation in your work as a Full Stack Developer where you encountered an unexpected system failure or shifting requirement related to React. How did you prioritize and resolve it?",
+      "category": "Behavioral",
+      "difficulty": "Medium",
+      "expected_competencies_json": "[\"Adaptability\",\"Crisis Management\",\"Communication\"]",
+      "star_guidance": "Highlight how you communicated risk early to stakeholders while maintaining operational stability.",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T04:36:13.899Z"
+    },
+    {
+      "id": 58,
+      "session_id": 12,
+      "question_number": 3,
+      "question_text": "What architectural patterns or best practices do you apply when scaling solutions for Full Stack Developer roles in the Software & Technology domain?",
+      "category": "Technical",
+      "difficulty": "Hard",
+      "expected_competencies_json": "[\"Scalability\",\"System Architecture\",\"Industry Standards\"]",
+      "star_guidance": "Describe your diagnostic methodology step-by-step before diving into code or implementation choices.",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T04:36:13.903Z"
+    },
+    {
+      "id": 59,
+      "session_id": 12,
+      "question_number": 4,
+      "question_text": "Tell me about a time you had a technical or process disagreement with a teammate while working on React. How did you align on a solution?",
+      "category": "Managerial",
+      "difficulty": "Medium",
+      "expected_competencies_json": "[\"Conflict Resolution\",\"Collaboration\",\"Data-Driven Consensus\"]",
+      "star_guidance": "Focus on empathy, benchmarking, prototyping, and aligning on business goals rather than winning an argument.",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T04:36:13.906Z"
+    },
+    {
+      "id": 60,
+      "session_id": 12,
+      "question_number": 5,
+      "question_text": "If hired for this Full Stack Developer position, how would you approach your first 30-60-90 days to drive impact in React?",
+      "category": "HR",
+      "difficulty": "Easy",
+      "expected_competencies_json": "[\"Strategic Vision\",\"Ownership\",\"Self-Direction\"]",
+      "star_guidance": "Break down your answer into 30 days (learning & context), 60 days (first key contribution), and 90 days (leadership & optimization).",
+      "is_follow_up": 0,
+      "parent_question_id": null,
+      "created_at": "2026-07-24T04:36:13.908Z"
+    }
+  ],
+  "answers": [],
+  "feedback": [],
+  "prep_cards": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "session_id": 1,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T16:26:24.329Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "session_id": 1,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T16:26:24.331Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "session_id": 1,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T16:26:24.332Z"
+    },
+    {
+      "id": 4,
+      "user_id": 2,
+      "session_id": 1,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T16:26:24.335Z"
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "session_id": 2,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T18:08:58.160Z"
+    },
+    {
+      "id": 6,
+      "user_id": 2,
+      "session_id": 2,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T18:08:58.161Z"
+    },
+    {
+      "id": 7,
+      "user_id": 2,
+      "session_id": 2,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T18:08:58.163Z"
+    },
+    {
+      "id": 8,
+      "user_id": 2,
+      "session_id": 2,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T18:08:58.167Z"
+    },
+    {
+      "id": 9,
+      "user_id": 2,
+      "session_id": 3,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T18:09:09.370Z"
+    },
+    {
+      "id": 10,
+      "user_id": 2,
+      "session_id": 3,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T18:09:09.372Z"
+    },
+    {
+      "id": 11,
+      "user_id": 2,
+      "session_id": 3,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T18:09:09.374Z"
+    },
+    {
+      "id": 12,
+      "user_id": 2,
+      "session_id": 3,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T18:09:09.377Z"
+    },
+    {
+      "id": 13,
+      "user_id": 2,
+      "session_id": 4,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T18:09:37.606Z"
+    },
+    {
+      "id": 14,
+      "user_id": 2,
+      "session_id": 4,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T18:09:37.608Z"
+    },
+    {
+      "id": 15,
+      "user_id": 2,
+      "session_id": 4,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T18:09:37.611Z"
+    },
+    {
+      "id": 16,
+      "user_id": 2,
+      "session_id": 4,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T18:09:37.613Z"
+    },
+    {
+      "id": 17,
+      "user_id": 2,
+      "session_id": 5,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T18:09:48.335Z"
+    },
+    {
+      "id": 18,
+      "user_id": 2,
+      "session_id": 5,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T18:09:48.341Z"
+    },
+    {
+      "id": 19,
+      "user_id": 2,
+      "session_id": 5,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T18:09:48.343Z"
+    },
+    {
+      "id": 20,
+      "user_id": 2,
+      "session_id": 5,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T18:09:48.345Z"
+    },
+    {
+      "id": 21,
+      "user_id": 2,
+      "session_id": 6,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T18:13:33.771Z"
+    },
+    {
+      "id": 22,
+      "user_id": 2,
+      "session_id": 6,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T18:13:33.774Z"
+    },
+    {
+      "id": 23,
+      "user_id": 2,
+      "session_id": 6,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T18:13:33.776Z"
+    },
+    {
+      "id": 24,
+      "user_id": 2,
+      "session_id": 6,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T18:13:33.779Z"
+    },
+    {
+      "id": 25,
+      "user_id": 2,
+      "session_id": 7,
+      "card_type": "achievement",
+      "title": "High-Impact Infrastructure Optimization",
+      "content_json": "{\"cardType\":\"achievement\",\"title\":\"High-Impact Infrastructure Optimization\",\"talkingPoints\":[\"Migrated legacy monolithic service to micro-services architecture\",\"Introduced automated CI/CD pipeline reducing deployment time\",\"Mentored 3 junior engineers on code review best practices\"],\"keyMetrics\":\"Reduced deployment rollback rate by 60% and saved 15 engineering hours/week\",\"starTip\":\"Frame around initiative and business cost savings.\"}",
+      "created_at": "2026-07-23T18:13:47.249Z"
+    },
+    {
+      "id": 26,
+      "user_id": 2,
+      "session_id": 7,
+      "card_type": "project",
+      "title": "Real-Time AI Feature Integration",
+      "content_json": "{\"cardType\":\"project\",\"title\":\"Real-Time AI Feature Integration\",\"talkingPoints\":[\"Integrated Generative AI LLM endpoint with backend rate-limiting\",\"Implemented WebSocket real-time state synchronization\",\"Optimized frontend render performance with memoization\"],\"keyMetrics\":\"Achieved sub-200ms frontend render latency for 10k daily active users\",\"starTip\":\"Emphasize full-stack architectural ownership.\"}",
+      "created_at": "2026-07-23T18:13:47.252Z"
+    },
+    {
+      "id": 27,
+      "user_id": 2,
+      "session_id": 7,
+      "card_type": "strength",
+      "title": "Cross-Functional Stakeholder Alignment",
+      "content_json": "{\"cardType\":\"strength\",\"title\":\"Cross-Functional Stakeholder Alignment\",\"talkingPoints\":[\"Translating complex technical trade-offs into business value\",\"Proactive risk communication during sprint planning\",\"Fostering data-driven engineering consensus\"],\"keyMetrics\":\"100% on-time sprint delivery across 4 quarters\",\"starTip\":\"Provide an example where you prevented scope creep.\"}",
+      "created_at": "2026-07-23T18:13:47.257Z"
+    },
+    {
+      "id": 28,
+      "user_id": 2,
+      "session_id": 7,
+      "card_type": "knowledge",
+      "title": "Full Stack Developer Core Concepts Cheat Sheet",
+      "content_json": "{\"cardType\":\"knowledge\",\"title\":\"Full Stack Developer Core Concepts Cheat Sheet\",\"talkingPoints\":[\"State Management & Lifecycle Optimization\",\"REST vs GraphQL vs WebSockets API patterns\",\"Database indexing, query execution plans & caching strategies\"],\"keyMetrics\":\"Understanding trade-offs between consistency and availability (CAP theorem)\",\"starTip\":\"Be prepared to explain why you chose a specific database or architecture.\"}",
+      "created_at": "2026-07-23T18:13:47.261Z"
+    }
+  ],
+  "session_shares": [],
+  "practice_plans": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "session_id": 1,
+      "title": "7-Day Improvement Plan for Full Stack Developer",
+      "plan_days_json": "[{\"day\":1,\"focus\":\"STAR Framework Refinement\",\"action\":\"Draft 3 behavioral stories strictly following Situation, Task, Action, and Result headers.\"},{\"day\":2,\"focus\":\"Metrics & Data Integration\",\"action\":\"Extract 5 measurable stats from your top projects (e.g. % performance increase, scale).\"},{\"day\":3,\"focus\":\"Trade-off Articulation\",\"action\":\"Practice answering technical design questions by explicitly stating pros/cons of selected technologies.\"},{\"day\":4,\"focus\":\"Scenario Deep Dives\",\"action\":\"Re-answer questions from this session using the improved STAR model response recommendations.\"},{\"day\":5,\"focus\":\"Speed & Time Management\",\"action\":\"Practice keeping answers under 2 minutes while maintaining high clarity.\"},{\"day\":6,\"focus\":\"Target Role Mock Drill\",\"action\":\"Execute a full 5-question mock interview session in simulated real-time mode.\"},{\"day\":7,\"focus\":\"Final Delivery & Polish\",\"action\":\"Review performance progress metrics, refine key project talking points, and boost confidence.\"}]",
+      "created_at": "2026-07-23T16:29:17.065Z"
+    }
+  ],
+  "auto_ids": {
+    "users": 4,
+    "interview_sessions": 21,
+    "questions": 99,
+    "answers": 19,
+    "feedback": 19,
+    "prep_cards": 29,
+    "session_shares": 1,
+    "practice_plans": 2
+  }
+}
