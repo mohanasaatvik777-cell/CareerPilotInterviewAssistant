@@ -18,10 +18,14 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      await login(email, password);
+      await login(email.trim(), password);
       navigate('/dashboard');
     } catch (err) {
-      setError(err.message || 'Login failed. Please check credentials.');
+      let msg = err.message || 'Login failed. Please check credentials.';
+      if (err.code === 'ECONNABORTED' || err.message?.includes('Network Error')) {
+        msg = 'Server is waking up (Render free tier cold start). Please wait 10-15 seconds and click again!';
+      }
+      setError(msg);
     } finally {
       setLoading(false);
     }

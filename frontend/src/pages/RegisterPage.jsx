@@ -35,7 +35,11 @@ export default function RegisterPage() {
       );
       navigate('/dashboard');
     } catch (err) {
-      setError(err.message || 'Registration failed. Please try again.');
+      let msg = err.message || 'Registration failed. Please try again.';
+      if (err.code === 'ECONNABORTED' || err.message?.includes('Network Error')) {
+        msg = 'Server is waking up (Render free tier cold start). Please wait 10-15 seconds and click again!';
+      }
+      setError(msg);
     } finally {
       setLoading(false);
     }
